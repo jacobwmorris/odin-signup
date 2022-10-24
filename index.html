@@ -8,45 +8,45 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- <div class="bg-img"></div> -->
+
     <header>
-        <img src="" alt="Odin logo">
+        <img src="./odin-lined.png" alt="Odin logo">
         <h1>ODIN</h1>
     </header>
 
     <main>
-        <p>
+        <p class="intro-p">
             This is not a real online service! You know you need something like This
             in your life to help you realize your deepest dreams. Sign up <em>now</em>
             to get started.
-        </p>
-        <p>
+        </p >
+        <p class="intro-p">
             You <em>know</em> you want to.
         </p>
         
-        <form action="#" method="post">
-            <section>
-                <h2>Let's do this!</h2>
-                <div class="input-wrapper">
-                    <div class="input-col">
-                        <label for="firstname">FIRST NAME<input type="text" name="firstname" id="firstname"></label>
-                        <label for="email">EMAIL<input type="email" name="email" id="email"></label>
-                        <label for="password">PASSWORD<input type="password" name="password" id="password"></label>
-                    </div>
-                    <div class="input-col">
-                        <label for="lastname">LAST NAME<input type="text" name="lastname" id="lastname"></label>
-                        <label for="phone">PHONE NUMBER<input type="tel" name="phone" id="phone"></label>
-                        <label for="password2">CONFIRM PASSWORD<input type="password" name="password2" id="password2"></label>
-                    </div>
+        <form action="#" method="post" id="signup">
+            <h2>Let's do this!</h2>
+            <div class="input-wrapper">
+                <div class="input-col">
+                    <label for="firstname">FIRST NAME<input type="text" name="firstname" id="firstname"></label>
+                    <label for="email">EMAIL<input type="email" name="email" id="email"></label>
+                    <label for="password">PASSWORD<input type="password" name="password" id="password"></label>
                 </div>
-            </section>
-            <button type="submit">Create Account</button>
+                <div class="input-col">
+                    <label for="lastname">LAST NAME<input type="text" name="lastname" id="lastname"></label>
+                    <label for="phone">PHONE NUMBER<input type="tel" name="phone" id="phone"></label>
+                    <label for="password2">CONFIRM PASSWORD<input type="password" name="password2" id="password2"></label>
+                </div>
+            </div>
         </form>
+        <button type="submit" form="signup">Create Account</button>
 
         <p>Already have an account? <a href="#">Log in</a></p>
     </main>
 
     <footer>
-        Photo by <a href="#"> Halie West</a> on <a href="#">Unsplash</a>
+        Photo by <a href="https://unsplash.com/photos/25xggax4bSA"> Halie West on Unsplash</a>
     </footer>
 </body>
 </html>

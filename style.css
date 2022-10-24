@@ -1,3 +1,132 @@
-* {
-    border: 1px solid black;
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./Norse-Bold.otf") format("opentype");
 }
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+:root {
+    --logo-area-width: 450px;
+}
+
+body {
+    background: fixed url("./halie-west-25xggax4bSA-unsplash.jpg");
+    background-color: black;
+    background-size: 720px;
+    /* background-position: left; */
+}
+
+header, footer {
+    position: absolute;
+    left: 0px;
+    width: var(--logo-area-width);
+}
+
+/* Header style */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20vh;
+    color: white;
+    background-color: #0006;
+}
+
+h1 {
+    font: bold 90px "Norse-Bold", sans-serif;
+}
+
+header img {
+    height: 120px;
+    margin: 5px;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    bottom: 2em;
+    color: white;
+}
+
+footer a {
+    color: inherit;
+}
+
+/* Main body */
+main {
+    position: absolute;
+    left: var(--logo-area-width);
+    top: 0px;
+    /* width: max(500px, calc(100vw - var(--logo-area-width))); */
+    width: calc(100vw - var(--logo-area-width));
+    min-width: 550px;
+    height: 100%;
+    background-color: #eee;
+}
+
+p, button {
+    margin: 40px;
+}
+
+.intro-p {
+    max-width: 700px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.intro-p:first-child {
+    margin-top: 120px;
+}
+
+/* Form style */
+form {
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 2px 2px 4px #aaa;
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.input-col {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    display: block;
+    margin-top: 20px;
+}
+
+label {
+    font-size: .8em;
+    letter-spacing: .1em;
+}
+
+input {
+    width: 200px;
+    padding: 4px;
+    border: 1px solid #E5E7EB;
+    margin: 0 60px 20px 0;
+    border-radius: 4px;
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    margin-bottom: 0;
+    border-radius: 6px;
+    background-color: #596D48;
+    box-shadow: 2px 2px 4px #aaa;
+}
+
+
