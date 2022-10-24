@@ -145,14 +145,13 @@ input.error {
     border: 1px solid red;
 }
 
-#password.error::after {
-    content: "Passwords do not match.";
-    display: block;
-    height: 20px;
-    border: 1px solid black;
+.noMatchErr {
+    color: red;
+    font-size: 0.8em;
+    margin-top: -20px;
+    display: none;
 }
 
-#aftertest::after {
-    content: "Hello";
+.noMatchErr.error {
     display: block;
 }
