@@ -65,7 +65,7 @@ main {
     /* width: max(500px, calc(100vw - var(--logo-area-width))); */
     width: calc(100vw - var(--logo-area-width));
     min-width: 550px;
-    height: 100%;
+    height: max(800px, 100%);
     background-color: #eee;
 }
 
@@ -131,6 +131,15 @@ button {
 }
 
 /* Pseudo-class/Validation styels */
+button:hover {
+    background-color: #8dad71;
+}
+
+button:active {
+    background-color: #596D48;
+    box-shadow: none;
+}
+
 :focus {
     border: 0;
     outline: 0;
