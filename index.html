@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Signup</title>
     <link href="./style.css" rel="stylesheet">
+    <script src="./validate.js" defer></script>
 </head>
 <body>
-    <!-- <div class="bg-img"></div> -->
-
     <header>
         <img src="./odin-lined.png" alt="Odin logo">
         <h1>ODIN</h1>
@@ -31,12 +30,13 @@
                 <div class="input-col">
                     <label for="firstname">FIRST NAME<input type="text" name="firstname" id="firstname"></label>
                     <label for="email">EMAIL<input type="email" name="email" id="email"></label>
-                    <label for="password">PASSWORD<input type="password" name="password" id="password"></label>
+                    <label for="password">PASSWORD<input type="password" name="password" id="password" class="error"></label>
+                    <div id="aftertest">thingy</div>
                 </div>
                 <div class="input-col">
                     <label for="lastname">LAST NAME<input type="text" name="lastname" id="lastname"></label>
                     <label for="phone">PHONE NUMBER<input type="tel" name="phone" id="phone"></label>
-                    <label for="password2">CONFIRM PASSWORD<input type="password" name="password2" id="password2"></label>
+                    <label for="password2">CONFIRM PASSWORD<input type="password" name="password2" id="password2" class="error"></label>
                 </div>
             </div>
         </form>
